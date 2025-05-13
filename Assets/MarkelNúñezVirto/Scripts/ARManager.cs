@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -18,11 +18,9 @@ public class ARManager : MonoBehaviour
 
     void Start()
     {
-        
         botonDeBorrar.onClick.AddListener(BorrarInstancias);
         botonDropDown.onValueChanged.AddListener(CambiarPrefabSeleccionado);
 
-        
         if (botonDropDown.options.Count == 0)
         {
             botonDropDown.ClearOptions();
@@ -43,13 +41,8 @@ public class ARManager : MonoBehaviour
         }
     }
 
-    public void InstanciarPrefab(Vector3 posicion)
-    {
-        GameObject nuevo = Instantiate(prefabOpciones[prefabSeleccionado], posicion, Quaternion.identity);
-        instancias.Add(nuevo);
-    }
-
-    void BorrarInstancias()
+    
+    public void BorrarInstancias()
     {
         foreach (GameObject obj in instancias)
         {
@@ -58,8 +51,15 @@ public class ARManager : MonoBehaviour
         instancias.Clear();
     }
 
-    void CambiarPrefabSeleccionado(int index)
+    
+    public void CambiarPrefabSeleccionado(int index)
     {
         prefabSeleccionado = index;
+    }
+
+    public void InstanciarPrefab(Vector3 posicion)
+    {
+        GameObject nuevo = Instantiate(prefabOpciones[prefabSeleccionado], posicion, Quaternion.identity);
+        instancias.Add(nuevo);
     }
 }

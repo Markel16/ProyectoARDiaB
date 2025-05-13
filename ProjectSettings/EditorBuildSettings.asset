@@ -6,14 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: "Assets/MarkelN\xFA\xF1ezVirto/Scenes/Scene3.unity"
+    guid: 786c271b7f99a2546a6c490a36d0ea11
+  - enabled: 1
     path: "Assets/MarkelN\xFA\xF1ezVirto/Scenes/Scene1.unity"
     guid: f2014fb29cca54840aee417101c98c8f
   - enabled: 1
     path: "Assets/MarkelN\xFA\xF1ezVirto/Scenes/Scene2.unity"
     guid: efb2c6d6c68d74a5daa7c6102af49cf7
-  - enabled: 1
-    path: "Assets/MarkelN\xFA\xF1ezVirto/Scenes/Scene3.unity"
-    guid: 786c271b7f99a2546a6c490a36d0ea11
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 9eba7522ca8ec446195418c97a507711, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 92ea99045d5264a25ba950bf59f1bd4f, type: 2}

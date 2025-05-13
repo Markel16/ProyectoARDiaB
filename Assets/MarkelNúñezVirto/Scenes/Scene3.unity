@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 207063111}
   - component: {fileID: 207063110}
   - component: {fileID: 207063114}
+  - component: {fileID: 207063115}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -243,6 +244,33 @@ MonoBehaviour:
   panelUI: {fileID: 274551806}
   goButton: {fileID: 1323180994}
   sceneName: Scene1
+--- !u!54 &207063115
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207063109}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &274551806
 GameObject:
   m_ObjectHideFlags: 0
@@ -331,6 +359,7 @@ GameObject:
   - component: {fileID: 341154160}
   - component: {fileID: 341154159}
   - component: {fileID: 341154163}
+  - component: {fileID: 341154164}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -439,6 +468,33 @@ MonoBehaviour:
   panelUI: {fileID: 274551806}
   goButton: {fileID: 1323180994}
   sceneName: Scene2
+--- !u!54 &341154164
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341154158}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &510160611
 GameObject:
   m_ObjectHideFlags: 0
@@ -895,7 +951,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1323180995}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1323180995
 MonoBehaviour:
   m_ObjectHideFlags: 0
