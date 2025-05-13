@@ -1,11 +1,11 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class TriggerSceneLoader : MonoBehaviour
 {
-    public GameObject panelUI;         
-    public Button goButton;            
+    public GameObject panelUI;
+    public Button goButton;
     public string sceneName = "NombreDeTuEscena";  
 
     void Start()
@@ -21,20 +21,20 @@ public class TriggerSceneLoader : MonoBehaviour
             
             Transform cameraTransform = Camera.main.transform;
             Vector3 forward = cameraTransform.forward;
-            Vector3 panelPosition = cameraTransform.position + forward * 1.5f; 
+            Vector3 panelPosition = cameraTransform.position + forward * 1.5f;
             panelUI.transform.position = panelPosition;
 
-            
+            // Orientarlo hacia el jugador
             panelUI.transform.LookAt(cameraTransform);
-            panelUI.transform.Rotate(0, 180, 0); 
+            panelUI.transform.Rotate(0, 180, 0);
 
             panelUI.SetActive(true);
         }
     }
 
-    void CargarEscena()
+    
+    public void CargarEscena()
     {
         SceneManager.LoadScene(sceneName);
     }
 }
-
